@@ -1,0 +1,123 @@
+<html>
+<head> <title>Sueldos y salirios de un trabajador</title> </head>
+<script>
+function Salario(){
+var PH= parseInt(document.FormSueldos.txtPH.value);
+var HT= parseInt(document.FormSueldos.txtHT.value);
+var DT= parseInt(document.FormSueldos.txtDT.value);
+var HE= parseInt(document.FormSueldos.txtHE.value);
+
+document.FormSueldos.txtPD1.value=PH*HT;
+document.FormSueldos.txtSSHE.value=PH*HT*DT;
+document.FormSueldos.txtPHE.value=(PH*2)*HE;
+document.FormSueldos.txtSSCHE.value=PH*HT*DT+PH*HE*2;
+document.FormSueldos.txtSQ.value=(PH*HT*DT+PH*HE*2)*2;
+document.FormSueldos.txtSM.value=(PH*HT*DT+PH*HE*2)*4;
+}
+</script>
+
+<body>
+
+<center><img src= "logos1.png"width="1050" height="100"></center><br>
+<font color="black" size="4" face="Tahoma"
+<p><font color= "black"; size= 5; face= "Tahoma"><center>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS  DEL ESTADO DE MÉXICO. PLANTEL IXTLAHUACA</center></font></p>
+
+<p><font color= "black"; size= "3"; face= "Tahoma"><center><strong>Elaborado por :</strong>Axel bandido
+<strong>Grupo:</strong>404<strong>Número de lista:</strong>12<br>
+<strong>Fecha de elaboración:</strong>9de Marzo 2024<strong>Hora:</strong>11:00 a.m.
+<p><font color= "black"; size= "4"; face= "Tahoma"><center><strong>SUELDOS Y SALARIOS</strong></center><br></p></font>
+
+<table width="1000" border=1>
+<form name="FormSueldos">
+<tr>
+<td width="250"><label>ingresa el numero de folio:</label></td>
+<td width="250"><imput type="text" name="txtFolio"></td>
+<td colspan="2"rowspan="6"><center><img src="jajaj.JFIF"></center>
+</tr>
+
+<tr>
+<td><label>Nombre:</label></td>
+<td><input type="text" name="txtNombre"></td>
+</tr>
+
+<tr>
+<td><label>Apellido paterno:</label></td>
+<td><input type="text"name="txtPaterno"></td>
+</tr>
+
+<tr>
+<td><label>Apellido materno:</label></td>
+<td><input type="text" name="txtMaterno"></td>
+</tr>
+
+<tr>
+<td><label>Telefono:</label></td>
+<td><input type="text"name="txtTelefono"></td>
+</tr>
+
+<tr>
+<td><label>Domicilio:</label></td>
+<td><input type="text"name="txtDomicilio"></td>
+</tr>
+
+<tr>
+<td><label>Correo  electrónico</label></td>
+<td><input type="text"name="txtCorreo"></td>
+<td width="250"><label>Pago por día:</label></td>
+<td width="250"><input type="text" name="txtPD1"></td>
+</tr>
+
+<tr>
+<td><label>Departamento:</label></td>
+<td><input type="text" name="txtDepartameento"></td>
+<td><label>Sueldo semanal sin horas extras</label></td>
+<td><input type="text" name="txtSSHE"></td>
+
+<tr>
+<td><label>Pago por hora:</label></td>
+<td><input type="text" name="txtPH"></td>
+<td><label>pago por horas Extras</label></td>
+<td><input type="text" name="txtPHE"></td>
+</tr>
+
+<tr>
+<td><label>Horas trabajadas:</label></td>
+<td><input type="text" name="txtHT"></td>
+<td><label>Sueldo semanal por horas extras</label></td>
+<td><input type="text" name="txtSSCHE"></td>
+</tr>
+
+<tr>
+<td><label>Dias trabajados:</label></td>
+<td><input type="text" name="txtDT"></td>
+<td><label>Sueldo quincenal</label></td>
+<td><input type="text" name="txtSQ"></td>
+</tr>
+
+<tr>
+<td><label>Horas extras trabajadas:</label></td>
+<td><input type="text" name="txtHE"></td>
+<td><label>Sueldo mensual</label></td>
+<td><input type="text" name="txtSM"></td>
+</tr>
+
+<tr>
+<td colspan="4"><center><input type="button" value="CALCULAR" onclick="Salario()">
+<input type="reset" value="LIMPIAR" onclick="borrar()">
+<input type="button" value="REGRESAR AL MENU" onclick="Regresar()">
+<input type="button" value="CERRAR" onclick="Salir()">
+</center></td>
+
+
+<center><table border="0"</center>
+  <tr>
+   <center><img src="logoo.png"width="1200" height="35" alt="Caratula.html" ></center>
+<h1><center><font size="2"><font face="Arial">Plantel Ixtlahuaca</font size></font face></center></h1>
+<h1><center><font size="2"><font face="Arial">Santa Ana Ixtlahuaca S/N, Ixtlahuaca,  Mexico, CP.50760.num:712 283 0984</font size></font face></center></h1>
+
+</table>
+</tr>
+</table>
+</body>
+</form>
+</html>
