@@ -1,0 +1,183 @@
+<html>
+<head><title>Inicio </title><head>
+<body>
+
+<center><table border="0"></center>
+<tr>
+<td width = 1000 height = 100><center><img src="Encabezado.png"width = 900 height = 140></center>
+</td>
+</tr>
+
+<table border=0>
+<tr>
+<td width = 338 height = 410>
+<center><div id="current_date">
+    <script>
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('es-ES', options);
+    </script>
+</div></center>
+<h1><a href= "http://cecytem.edomex.gob.mx/ixtlahuaca"><center><center><img src="B.cecy.png"width = 140 height = 40></center></h1>
+<h1><a href= "http://cecytem.edomex.gob.mx/mision_vision_objetivos"><center><center><img src="misonn.png"width = 140 height = 40></center></h1>
+<h1><a href= "http://cecytem.edomex.gob.mx/mision_vision_objetivos"><center><center><img src="VISS.png"width = 140 height = 40></center></h1>
+<h1><a href= "http://cecytem.edomex.gob.mx/organigrama"><center><center><img src="B.or.png"width = 140 height = 40></center></h1>
+<h1><a href= "http://cecytem.edomex.gob.mx/historia"><center><center><img src="B.his.png"width = 140 height = 40></center></h1>
+
+<td width = 350 height = 410>
+
+<font size="3"><font face="Bodoni MT"><font color="black"><p style="text-center: justify"><center> COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DEL ESTADO DE MÉXICO<br>
+Plantel Ixtlahuaca</center>
+
+<font face="Bodoni MT"><font size="3"><font color="black"><p style="text-center: justify"><center>PORTAFOLIO DE EVIDENCIAS 1° PARCIAL</center>
+
+<center><img src="Bienvenido.gif">
+
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Modulo III: <strong>Desarrolla aplicaciones web</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Submódulo I: <strong>Construye pagínas web</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Submódulo II: <strong>Desarrolla aplicaciónes que se ejecutan</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Submódulo III: <strong>Desarrolla aplicaciónes que se ejecutan en el servidor</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Nombre del alumno: <strong>Axel Gonzalez Felipe</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Grupo: <strong>304</strong>____________________Turno: <strong>Matutíno</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Carrera: <strong>Programación</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Ciclo escolar: <strong>2024-2024</center></strong>
+<font face="Times New Roman"><font size="2"><font color="black"><p style="text-center: justify"><center>Número de lista: <strong>9</center></strong>
+
+
+
+<td width = 300 height = 410>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+</head>
+<body>
+<p>
+<div class="container">
+    <form action="#" method="post" id="loginForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Iniciar Sesión">
+
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "Axel" && password === "1234") {
+            window.location.href = "file:///C:/xampp/htdocs/NL_9/menu.html";
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    });
+</script>
+</body>
+</html>
+</tr>
+</td>
+
+<center><table border="0"></center>
+<tr>
+<td width = 1000 height = 10><center><img src="pie.png"width = 1000 height = 40></td></center>
+  </tr>
+<td width = "1800"><font face="Times New Roman"><font size="1"><font color="black"><p style="text-center: justify"><center>Todos los derechos reservados. Elaborado por Axel Gonzalez Felipe. Tel 711600889. Email: Cafgz@gmail.com. 
+Pagina web https://www.educacion.mx Domicilio S/N. Prohibido su reproduccion total o parcial. Para un optimo funcionamiento utilizar navegador Google Chrome y resolución de 1024</center></td>
+
+</td>
+</tr>
