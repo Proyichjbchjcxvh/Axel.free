@@ -1,0 +1,248 @@
+<html>
+<head><title>P_2MARQUESINAS</title>
+<p style="text-aling:right"><center><height="80"><img src="Logos1.PNG"></height></width="300"></p style="text-aling:right"><font size"300"></center>
+
+<title>Fecha y Hora</title>
+<script>
+function mostrarFechaHora() {
+  var fechaHora = new Date();
+  var fecha = fechaHora.toLocaleDateString();
+  var hora = fechaHora.toLocaleTimeString();
+  document.getElementById('fecha').innerHTML = fecha;
+  document.getElementById('hora').innerHTML = hora;
+}
+setInterval(mostrarFechaHora, 1000);
+</script>
+<style>
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .marquee {
+        animation: rotate 10s linear infinite;
+        display: inline-block;
+        white-space: nowrap;
+    }
+</style>
+
+<style>
+.marquesina {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquesina span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquesina 20s linear infinite;
+}
+
+@keyframes marquesina {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+<style>
+    .marquee-container {
+        overflow: hidden;
+        position: relative;
+        height: 50px; /* Altura de la marquesina */
+    }
+    .marquee-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-100%); }
+    }
+</style>
+<style>
+    .marquee-container {
+        overflow: hidden;
+        position: relative;
+        height: 50px; /* Altura de la marquesina */
+    }
+    .marquee-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .letter {
+        color: red;
+        animation: colorchange 2s linear infinite alternate;
+    }
+    @keyframes colorchange {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: green; }
+    }
+</style>
+
+
+<style>
+    .marquee {
+        width: 200px;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+    .marquee p {
+        margin: 0;
+        line-height: 50px;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-100%); }
+    }
+</style>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquesina Vertical con CSS y JavaScript</title>
+<style>
+    .marquee-container {
+        height: 50px; /* Altura de la marquesina */
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+    .marquee-content {
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateY(100%); }
+        100% { transform: translateY(-100%); }
+    }
+</style>
+
+</head>
+
+<body onload="mostrarFechaHora()">
+<center><h1><strong>Axel N.L :9Grupo: 404<h4></center>
+<center><p>Fecha: <span id="fecha"></span></p>
+<p>Hora: <span id="hora"></span></p></center>
+
+
+<center><h1><font color="black">PRACTICA 2 MARQUESINAS </font color></h3></center>
+ <center><table border="1">
+        <thead>
+            <tr>
+                <td width= "90"><center><strong>N°</th>
+                <td width= "470"><center><strong>Marquesina</th>
+                <td width= "470"><center><strong>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><center>1</td>
+                <td><center>combo box</td>
+                <td><marquee>Ejemplo</marquee></td>
+            </tr>
+            <tr>
+                <td geigth= "100"><center>2</td>
+                <td heigth= "100"><center>list box</td>
+                <td heigth= "100"><marquee direction="up">Ejemplo</marquee></td>
+           		</tr>
+            <tr>
+                <td><center>3</td>
+                <td><center>imagen</td>
+                <td><marquee
+  direction="down"
+  width="500"
+  height="250"
+  behavior="alternate"
+  style="border:solid">
+  <marquee behavior="alternate">
+    Ejemplo.
+  </marquee>
+</marquee></td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td><center>5</td>
+                <td><center>area de texto</td>
+                <td><div class="marquesina" style="width: 180px;"><span>Ejemplo</span>
+</div>
+</td>
+            </tr>
+
+
+            <tr>
+                <td><center>6</td>
+                <td><center>controlor deslisante</td>
+                <td><div class="marquesina" style="width: 240px;"><span>Ejemplo</span>
+</div>
+</td>
+            </tr>
+            <tr>
+                <td><center>7</td>
+                <td><center>Cambia de color</td>
+                <td><div class="marquee-container">
+    <div class="marquee-content">
+        <span class="letter">E</span>
+        <span class="letter">j</span>
+        <span class="letter">e</span>
+        <span class="letter">m</span>
+        <span class="letter">p</span>
+        <span class="letter">l</span>
+        <span class="letter">o</span>
+        <span class="letter">.</span>
+        <span class="letter">.</span>
+        <span class="letter">.</span>
+        <span class="letter">.</span>
+    </div>
+</div></td>
+            </tr>
+            <tr>
+                <td><center>8</td>
+                <td><center>Basico</td>
+                <td><marquee behavior="scroll" direction="left">Ejemplo</marquee></td>
+            </tr>
+            <tr>
+                <td><center>9</td>
+                <td><center>Vertical y gira </td>
+                <td><div class="marquee">
+    <p>Ejemplo</p>
+</div></td>
+            </tr>
+            <tr>
+                <td><center>10</td>
+                <td><center>Gira</td>
+                <td><div class="marquee">Ejemplo.</div></td>
+            </tr>
+        </tbody>
+    </table></center>
+
+<center><table border="0"</center>
+  <tr>
+    <td><img src="Final2.PNG"width = 1090 height = 50></td></tr>
+</table>
+
+<p><center><font size="1">Todos los derechos reservados,Elaborado por:Axel, Tel:728998879, Correo:.JAJAJ@gmail.com,<br>Página web:www.Marquesinas.gob.mx,Domicilio: desconocido<font size="1"></center></p>
+
+
+
+
+
+
+</body>
+ </html>
