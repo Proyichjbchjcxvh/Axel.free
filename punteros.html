@@ -1,98 +1,52 @@
-<html>
-<head><title>Menu</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punteros en HTML</title>
+    <style>
+        /* Estilos opcionales para los punteros */
+        body {
+            cursor: default;
+        }
+        .custom-cursor {
+            cursor: url('Gokuuuuu.png'), auto;
+        }
+    </style>
 </head>
 <body>
 
-<center><table width="1000" border="0">
-<tr>
+<!-- Tipos de punteros -->
 
-<td width="1095" colspan="6"><center><img src="Encabezado.png" width="1000"</td></center>
-<center><img src="Bienvenido.GIF" width="1000" height="300"></center>
-</tr>
+<!-- Puntero predeterminado -->
+<p>Puntero predeterminado (por defecto)</p>
 
-<tr>
-<td >
-    <center><img src="1.gif" width="150" height="150">
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>PRIMER PARCIAL</option>
-    <option value="Horario.html">Horario de Clases</option>
-    <option value="Suma.html">Suma de dos Numeros</option>
-    <option value="Terreno.html">Terreno de luis</option>
-    <option value="Marquesinas.html">Marquesina</option></center> 
-</select><br>
-</td>
+<!-- Puntero de texto -->
+<p style="cursor: text;">Puntero de texto</p>
 
-<td>
-    <center><img src="1.gif"  width="150" height="150"> 
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>SEGUNADO PARCIAL</option>
-    <option value="Login.html">Login</option>
-    <option value="Salario.html">Salario</option>
-    <option value="Raiz.html">Raiz cuadrada</option></center>
-    </select><br>
-</td>
+<!-- Puntero de espera -->
+<p style="cursor: wait;">Puntero de espera</p>
 
-<td>
-    <center><img src="1.gif"  width="150" height="150"> 
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>CECYTEM</option>
-    <option value="Quees.html">¿Que es el cecytem?</option>
-    <option value="Mision2.html">Misión</option>
-    <option value="Vision2.html">Vision</option>
-    <option value="Organigrama2.html">Organigrama</option>
-    <option value="Croquis.html">Croquis</option>
-    <option value="HistoriaC.html">Historia</option>
-    <option value="Infraestructura.html">Infraestructura</option></center>
-    </select><br>
-</td>
+<!-- Puntero de ayuda -->
+<p style="cursor: help;">Puntero de ayuda</p>
 
-<td>
-    <center><img src="1.gif"  width="150" height="150"> 
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>ADICCIONES</option>
-    <option value="Fentanilo.html">Fentanilo</option>
-    <option value="Metanfetaminas.html">Metanfetaminas</option></center>
-    </select><br>
-</td>
+<!-- Puntero de cruz -->
+<p style="cursor: crosshair;">Puntero de cruz</p>
 
-<td>
-    <center><img src="1.gif"  width="150" height="150"> 
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>HABITOS</option>
-    <option value="plato.html">Día 1</option>
-    <option value="agua.html">Día 2</option>
-    <option value="Alimentacion.html">Alimetación nutritiva</option></center>
-    </select><br>
-</td>
+<!-- Puntero de movimiento -->
+<p style="cursor: move;">Puntero de movimiento</p>
 
-<td>
-    <center><img src="1.gif"  width="150" height="150"> 
-    <br>
-<br>
-    <select onchange="window.location.href=this.value;">
-    <option value="#" selected>PLANEA</option>
-    <option value="Lectura.html">Lectura</option>
-    <option value="Matematicas.html">Matematicas</option></center>
-    <option value="Construyete.html">L. Construyete</option></center>
+<!-- Puntero de no permitido -->
+<p style="cursor: not-allowed;">Puntero de no permitido</p>
 
-    </select><br>
-</td>
+<!-- Puntero de zoom in -->
+<p style="cursor: zoom-in;">Puntero de zoom in</p>
 
-<center><table width="1095" border="0">
-<tr>
-    <td><center><img src="pie.png"width = 1000></td></center>
-  </tr>
+<!-- Puntero de zoom out -->
+<p style="cursor: zoom-out;">Puntero de zoom out</p>
 
-<tr>
-<td width = "850"><font face="Times New Roman"><font size="0"><font color="black"><p style="text-center: justify"><center>Todos los derechos reservados. Elaborado por Jehudiel Moreno Cruz. Tel 7296726306. Email: mcyeumore@.com. Pagina web https://www.educacion.mx Domicilio S/N. Prohibido su reproduccion total o parcial. Para un optimo funcionamiento utilizar navegador Google Chrome y resolución de 1024</center></td>
-</tr>
+<!-- Puntero personalizado -->
+<p class="custom-cursor">Puntero personalizado (ver imagen)</p>
+
+</body>
+</html>
